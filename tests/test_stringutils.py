@@ -18,6 +18,9 @@ class TestIsPalindrome(unittest.TestCase):
     def test_non_palindrome(self):
         self.assertFalse(is_palindrome("hello"))
 
+    def test_ignores_case_and_spaces(self):
+        self.assertTrue(is_palindrome("Race car"))
+
 
 if __name__ == "__main__":
     unittest.main()
